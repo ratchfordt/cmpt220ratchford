@@ -106,7 +106,7 @@ public class MyLong
 	}
 	
 	@SuppressWarnings("static-access")
-	public static void main(String[] args)
+	public static void main(String[] args) {
 	
 		MyLong mine = new MyLong(19);
 		MyLong yours = new MyLong(10);
