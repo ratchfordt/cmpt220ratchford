@@ -18,7 +18,7 @@ public class Triangle //extends GeometricObject
 	
 	public Triangle(double s1, double s2, double s3) throws IllegalTriangleException
 	{
-		if(s1 + s2 < s3 || s1 + s3 < s2 || s2 + s3 < s1)
+		if(s1 + s2 <= s3 || s1 + s3 <= s2 || s2 + s3 <= s1)
 			throw new IllegalTriangleException();
 		
 		side1 = s1;
