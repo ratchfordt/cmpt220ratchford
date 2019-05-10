@@ -2,16 +2,21 @@ package cmpt;
 
 public class Guest extends Person
 {
-	int room;
+	String room;
 	
-	public Guest(Key k, String n, int r) 
+	public Guest(Key k, String n, String r) 
 	{
 		super(k, n);
 		room = r;
 	}
 	
-	int getRoom()
+	public String getRoom()
 	{
 		return room;
+	}
+	
+	public String toString()
+	{
+		return "name: " + super.getName() + "\nroom: " + room;
 	}
 }

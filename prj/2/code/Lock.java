@@ -50,4 +50,18 @@ public class Lock
 	{
 		return name;
 	}
+	
+	public String toString()
+	{
+		String mstring = "";
+		for(int c:masterCode)
+			mstring += c;
+		
+		String cstring = "";
+		for(int c:changeCode)
+			cstring += c;
+		
+		return "name: " + name + "\nkeyway: " + keyway + "\nmaster code: " +mstring + "\nchange code: " + cstring;
+		
+	}
 }

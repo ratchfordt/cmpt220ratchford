@@ -19,4 +19,9 @@ public class Staff extends Person
 	{
 		return job;
 	}
+	
+	public String toString()
+	{
+		return "job: " + job + "\nname: " + super.getName() + "\n";
+	}
 }

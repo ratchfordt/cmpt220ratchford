@@ -26,4 +26,13 @@ public class Key
 	{
 		return keyway;
 	}
+	
+	public String toString()
+	{
+		String cstring = "";
+		for(int c:code)
+			cstring += c;
+		
+		return "keyway: " + keyway + "\ncode: " +cstring;
+	}
 }
